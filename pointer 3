@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int num = 10;  // Declare an integer variable
+    int *ptr;      // Declare a pointer variable to store the address of num
+
+    ptr = &num;    // Store the address of num in ptr
+
+    printf("Value of num: %d\n", num);           // Print the value of num
+    printf("Address of num: %p\n", (void*)&num); // Print the address of num
+    printf("Pointer ptr holds the address: %p\n", (void*)ptr); // Print the address stored in ptr
+    printf("Value pointed by ptr: %d\n", *ptr);  // Print the value at the address pointed by ptr
+
+    return 0;
+}
